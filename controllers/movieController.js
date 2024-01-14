@@ -2,7 +2,7 @@ const Movie = require('../models/Movie');
 
 exports.getAllMovies = async (req, res) => {
   try {
-    const movie=await Movie.find();
+    const movies=await Movie.find();
     res.status(200).json(movies);
     // TODO: Fetch all movies from the database
     // TODO: Send a JSON response with the movies
